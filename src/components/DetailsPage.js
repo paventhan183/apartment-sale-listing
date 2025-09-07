@@ -136,9 +136,7 @@ const DetailsPage = () => {
             style={{ border: 0 }}
             loading="lazy"
             allowFullScreen
-            src={`https://maps.google.com/maps?q=${encodeURIComponent(
-              item.address
-            )}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+            src={`https://maps.google.com/maps?q=${item.lat},${item.lng}&t=&z=15&ie=UTF8&iwloc=A&output=embed`}
           ></iframe>
         </div>
 

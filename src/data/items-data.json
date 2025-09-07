@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Sunny Downtown Apartment",
+    "name": "Harish flats Apartment",
     "placeName": "Chennai",
     "description": "A beautiful and sunny apartment in the heart of the city, featuring 2 bedrooms and a modern kitchen. This stunning space offers floor-to-ceiling windows that flood the living area with natural light, providing a warm and inviting atmosphere all year round. The open-concept layout is perfect for entertaining guests.",
     "imageUrl": "https://placehold.co/600x400/F8C471/FFFFFF/png?text=Sunny+Apartment",
@@ -11,7 +11,9 @@
       "https://placehold.co/800x600/FDEBD0/FFFFFF/png?text=Bedroom"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "123 Anna Salai, T. Nagar, Chennai, Tamil Nadu, 600017",
+    "address": "plot no 26/30, patchai street, mugalivakkam, Chennai, Tamil Nadu, 600125",
+    "lat": 13.017694,
+    "lng": 80.162056,
     "phoneNumber": "555-0101"
   },
   {
@@ -27,6 +29,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "456 Race Course Road, Saibaba Colony, Coimbatore, Tamil Nadu, 641011",
+    "lat": 11.0155,
+    "lng": 76.9521,
     "phoneNumber": "555-0102"
   },
   {
@@ -42,6 +46,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "789 West Masi Street, Simmakkal, Madurai, Tamil Nadu, 625001",
+    "lat": 9.9200,
+    "lng": 78.1130,
     "phoneNumber": "555-0103"
   },
   {
@@ -57,6 +63,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "101 Rockfort Main Road, Srirangam, Tiruchirappalli, Tamil Nadu, 620006",
+    "lat": 10.8575,
+    "lng": 78.6895,
     "phoneNumber": "555-0104"
   },
   {
@@ -72,6 +80,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "202 Omalur Main Road, Fairlands, Salem, Tamil Nadu, 636016",
+    "lat": 11.6643,
+    "lng": 78.1460,
     "phoneNumber": "555-0105"
   },
   {
@@ -87,6 +97,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "321 Cauvery Road, Karungalpalayam, Erode, Tamil Nadu, 638003",
+    "lat": 11.3360,
+    "lng": 77.7231,
     "phoneNumber": "555-0106"
   },
   {
@@ -102,6 +114,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "789 Big Temple Road, East Gate, Thanjavur, Tamil Nadu, 613001",
+    "lat": 10.7833,
+    "lng": 79.1333,
     "phoneNumber": "555-0107"
   },
   {
@@ -117,6 +131,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "12 Doddabetta Road, Charring Cross, Ooty, Tamil Nadu, 643001",
+    "lat": 11.4100,
+    "lng": 76.7100,
     "phoneNumber": "555-0108"
   },
   {
@@ -132,6 +148,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "456 Beach Road, Vivekananda Puram, Kanyakumari, Tamil Nadu, 629702",
+    "lat": 8.0883,
+    "lng": 77.5385,
     "phoneNumber": "555-0109"
   },
   {
@@ -147,6 +165,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "78 Mission Street, White Town, Puducherry, 605001",
+    "lat": 11.9338,
+    "lng": 79.8323,
     "phoneNumber": "555-0110"
   },
   {
@@ -162,6 +182,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "15 Fort Round Road, Balaji Nagar, Vellore, Tamil Nadu, 632004",
+    "lat": 12.9205,
+    "lng": 79.1331,
     "phoneNumber": "555-0111"
   },
   {
@@ -177,6 +199,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "555 Mount Road, Guindy, Chennai, Tamil Nadu, 600032",
+    "lat": 13.0102,
+    "lng": 80.2156,
     "phoneNumber": "555-0112"
   },
   {
@@ -192,6 +216,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "200 Cantonment Park Road, Cantonment, Tiruchirappalli, Tamil Nadu, 620001",
+    "lat": 10.8069,
+    "lng": 78.6896,
     "phoneNumber": "555-0113"
   },
   {
@@ -207,6 +233,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "303 Yercaud Main Road, Gorimedu, Salem, Tamil Nadu, 636008",
+    "lat": 11.6954,
+    "lng": 78.1653,
     "phoneNumber": "555-0114"
   },
   {
@@ -222,6 +250,8 @@
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
     "address": "1 Rajiv Gandhi Salai, Taramani, Tidel Park, Chennai, Tamil Nadu, 600113",
+    "lat": 12.9895,
+    "lng": 80.2467,
     "phoneNumber": "555-0115"
   }
 ]
