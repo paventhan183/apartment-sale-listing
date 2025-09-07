@@ -2,27 +2,33 @@
   {
     "id": 1,
     "name": "Harish flats Apartment",
-    "placeName": "T. Nagar, Chennai",
+    "placeName": "Mugalivakkam, Chennai",
     "description": "A beautiful and sunny apartment in the heart of the city, featuring 2 bedrooms and a modern kitchen. This stunning space offers floor-to-ceiling windows that flood the living area with natural light, providing a warm and inviting atmosphere all year round. The open-concept layout is perfect for entertaining guests.",
     "imageUrl": "https://placehold.co/600x400/F8C471/FFFFFF/png?text=Sunny+Apartment",
     "detailImages": [
       "https://placehold.co/800x600/F8C471/FFFFFF/png?text=Living+Room",
       "https://placehold.co/800x600/FAD7A0/FFFFFF/png?text=Kitchen",
-      "https://placehold.co/800x600/FDEBD0/FFFFFF/png?text=Bedroom"
+      "https://placehold.co/800x600/FDEBD0/FFFFFF/png?text=Bedroom",
+       "https://placehold.co/800x600/FDEBD0/FFFFFF/png?text=Bedroom"
     ],
-    "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "15, Usman Road, T. Nagar, Chennai, Tamil Nadu, 600017",
-    "lat": 13.0403,
-    "lng": 80.2337,
+    "videoUrl": null,
+    "address": "patchai street,mugalivakkam, Chennai, Tamil Nadu, 600017",
+    "lat": 13.017694,
+    "lng": 80.162056,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan+1",
-      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan+2"
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan+2",
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan+3",
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan+4"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0101",
     "show": true,
     "minAmount": 5000000,
-    "maxAmount": 7500000
+    "maxAmount": 7500000,
+    "landmark": "Near Panagal Park",
+    "nearbySchools": ["Holy Angels Anglo Indian Higher Secondary School", "Shrine Vailankanni Senior Secondary School"],
+    "nearbyHospitals": ["Bharathirajaa Hospital", "Be Well Hospital"]
   },
   {
     "id": 2,
@@ -46,7 +52,10 @@
     "phoneNumber": "555-0102",
     "show": true,
     "minAmount": 8000000,
-    "maxAmount": 9500000
+    "maxAmount": 9500000,
+    "landmark": "Close to Adyar Ananda Bhavan",
+    "nearbySchools": ["St. Patrick's Anglo Indian Higher Secondary School", "The School - KFI"],
+    "nearbyHospitals": ["Fortis Malar Hospital", "Adyar Cancer Institute"]
   },
   {
     "id": 3,
@@ -70,7 +79,10 @@
     "phoneNumber": "555-0103",
     "show": true,
     "minAmount": 10000000,
-    "maxAmount": 12000000
+    "maxAmount": 12000000,
+    "landmark": "Walking distance to Anna Nagar Tower Park",
+    "nearbySchools": ["SBOA School & Junior College", "Chennai Public School"],
+    "nearbyHospitals": ["Sundaram Medical Foundation", "Madras Medical Mission"]
   },
   {
     "id": 4,
@@ -94,7 +106,10 @@
     "phoneNumber": "555-0104",
     "show": true,
     "minAmount": 6000000,
-    "maxAmount": 8000000
+    "maxAmount": 8000000,
+    "landmark": "Opposite Phoenix Marketcity",
+    "nearbySchools": ["San Academy", "DAV Public School"],
+    "nearbyHospitals": ["Dr. Kamakshi Memorial Hospital", "Prashanth Super Speciality Hospital"]
   },
   {
     "id": 5,
@@ -118,7 +133,10 @@
     "phoneNumber": "555-0105",
     "show": true,
     "minAmount": 20000000,
-    "maxAmount": 25000000
+    "maxAmount": 25000000,
+    "landmark": "Near Kapaleeshwarar Temple",
+    "nearbySchools": ["Vidya Mandir Senior Secondary School", "P.S. Senior Secondary School"],
+    "nearbyHospitals": ["St. Isabel's Hospital", "Kauvery Hospital"]
   },
   {
     "id": 6,
@@ -142,7 +160,10 @@
     "phoneNumber": "555-0106",
     "show": true,
     "minAmount": 9000000,
-    "maxAmount": 11000000
+    "maxAmount": 11000000,
+    "landmark": "Adjacent to Guindy National Park",
+    "nearbySchools": ["Ashok Leyland School", "St. Thomas Mount School"],
+    "nearbyHospitals": ["Apollo Proton Cancer Centre", "MIOT International"]
   },
   {
     "id": 7,
@@ -166,7 +187,10 @@
     "phoneNumber": "555-0107",
     "show": true,
     "minAmount": 15000000,
-    "maxAmount": 18000000
+    "maxAmount": 18000000,
+    "landmark": "Near Valluvar Kottam",
+    "nearbySchools": ["Good Shepherd Matriculation Higher Secondary School", "Loyola College"],
+    "nearbyHospitals": ["Apollo Hospitals Greams Road", "SIMS Hospital"]
   },
   {
     "id": 8,
@@ -190,7 +214,10 @@
     "phoneNumber": "555-0108",
     "show": true,
     "minAmount": 7000000,
-    "maxAmount": 8500000
+    "maxAmount": 8500000,
+    "landmark": "Behind Music Academy",
+    "nearbySchools": ["Chettinad Vidyashram", "Boston International School"],
+    "nearbyHospitals": ["Kauvery Hospital Alwarpet", "Motherhood Hospital"]
   },
   {
     "id": 9,
@@ -214,7 +241,10 @@
     "phoneNumber": "555-0109",
     "show": true,
     "minAmount": 12000000,
-    "maxAmount": 15000000
+    "maxAmount": 15000000,
+    "landmark": "Next to Ashtalakshmi Temple",
+    "nearbySchools": ["Bala Vidya Mandir", "St. John's English School"],
+    "nearbyHospitals": ["Besant Hospital", "Asian Hospital"]
   },
   {
     "id": 10,
@@ -238,7 +268,10 @@
     "phoneNumber": "555-0110",
     "show": true,
     "minAmount": 9500000,
-    "maxAmount": 12500000
+    "maxAmount": 12500000,
+    "landmark": "Near Marundeeswarar Temple",
+    "nearbySchools": ["Shraddha Children's Academy", "St. Pius X Matriculation Higher Secondary School"],
+    "nearbyHospitals": ["Sugan Hospital", "Apollo Speciality Hospital OMR"]
   },
   {
     "id": 11,
@@ -262,7 +295,10 @@
     "phoneNumber": "555-0111",
     "show": true,
     "minAmount": 5500000,
-    "maxAmount": 7000000
+    "maxAmount": 7000000,
+    "landmark": "Close to Infosys & TCS OMR",
+    "nearbySchools": ["HLC International School", "Babaji Vidhyashram School"],
+    "nearbyHospitals": ["Gleneagles Global Health City", "Swaram Hospital"]
   },
   {
     "id": 12,
@@ -286,7 +322,10 @@
     "phoneNumber": "555-0112",
     "show": true,
     "minAmount": 4500000,
-    "maxAmount": 6000000
+    "maxAmount": 6000000,
+    "landmark": "Near World Trade Center",
+    "nearbySchools": ["American International School Chennai", "A.M.M. Matriculation Higher Secondary School"],
+    "nearbyHospitals": ["Apollo Speciality Hospital", "Perungudi Medical Centre"]
   },
   {
     "id": 13,
@@ -310,7 +349,10 @@
     "phoneNumber": "555-0113",
     "show": true,
     "minAmount": 8500000,
-    "maxAmount": 10000000
+    "maxAmount": 10000000,
+    "landmark": "Near Madipakkam Bus Terminus",
+    "nearbySchools": ["Pon Vidyashram", "Prince Matriculation Higher Secondary School"],
+    "nearbyHospitals": ["Anjakha Hospital", "K.M. Nursing Home"]
   },
   {
     "id": 14,
@@ -334,7 +376,10 @@
     "phoneNumber": "555-0114",
     "show": true,
     "minAmount": 11000000,
-    "maxAmount": 14000000
+    "maxAmount": 14000000,
+    "landmark": "Close to MIT Campus",
+    "nearbySchools": ["Srimathi Sundaravalli Memorial School", "Madras Institute of Technology"],
+    "nearbyHospitals": ["Chromepet Government Hospital", "Parvathy Hospital"]
   },
   {
     "id": 15,
@@ -358,6 +403,9 @@
     "phoneNumber": "555-0115",
     "show": true,
     "minAmount": 4000000,
-    "maxAmount": 5500000
+    "maxAmount": 5500000,
+    "landmark": "Inside Tidel Park campus",
+    "nearbySchools": ["American International School Chennai", "Abacus Montessori School"],
+    "nearbyHospitals": ["Fortis Malar Hospital", "Apollo Medical Centre"]
   }
 ]

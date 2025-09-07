@@ -9,6 +9,8 @@ const DetailsPage = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const [isVideoModalOpen, setVideoModalOpen] = useState(false);
   const [selectedFloorPlanIndex, setSelectedFloorPlanIndex] = useState(null);
+  const [floorPlanStartIndex, setFloorPlanStartIndex] = useState(0);
+  const [galleryStartIndex, setGalleryStartIndex] = useState(0);
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
 
   const openImage = (index) => {
@@ -33,6 +35,22 @@ const DetailsPage = () => {
 
   const closeFloorPlan = useCallback(() => {
     setSelectedFloorPlanIndex(null);
+  }, []);
+
+  const handleNextFloorPlanThumbnails = useCallback(() => {
+    setFloorPlanStartIndex(prevIndex => prevIndex + 1);
+  }, []);
+
+  const handlePrevFloorPlanThumbnails = useCallback(() => {
+    setFloorPlanStartIndex(prevIndex => prevIndex - 1);
+  }, []);
+
+  const handleNextGalleryThumbnails = useCallback(() => {
+    setGalleryStartIndex(prevIndex => prevIndex + 1);
+  }, []);
+
+  const handlePrevGalleryThumbnails = useCallback(() => {
+    setGalleryStartIndex(prevIndex => prevIndex - 1);
   }, []);
 
   const showNextImage = useCallback((e) => {
@@ -185,26 +203,82 @@ const DetailsPage = () => {
           </div>
         )}
 
+        {item.landmark && (
+          <div className="details-landmark">
+            <h3>Landmark</h3>
+            <p>{item.landmark}</p>
+          </div>
+        )}
+
+        {item.nearbySchools && item.nearbySchools.length > 0 && (
+          <div className="details-nearby">
+            <h3>Nearby Schools</h3>
+            <ul>
+              {item.nearbySchools.map((school, index) => (
+                <li key={index}>{school}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {item.nearbyHospitals && item.nearbyHospitals.length > 0 && (
+          <div className="details-nearby">
+            <h3>Nearby Hospitals</h3>
+            <ul>
+              {item.nearbyHospitals.map((hospital, index) => (
+                <li key={index}>{hospital}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
         {item.floorPlanUrls && item.floorPlanUrls.length > 0 && (
           <div className="details-floor-plan">
             <h3>Floor Plan(s)</h3>
-            <div className="floor-plan-thumbnails">
-              {item.floorPlanUrls.map((url, index) => (
-                <div
-                  key={index}
-                  className="floor-plan-thumbnail-container"
-                  onClick={() => openFloorPlan(index)}
-                  role="button"
-                  tabIndex={0}
-                  onKeyPress={(e) => e.key === 'Enter' && openFloorPlan(index)}
+            <div className="floor-plan-carousel">
+              {item.floorPlanUrls.length > 3 && (
+                <button
+                  className="carousel-arrow prev"
+                  onClick={handlePrevFloorPlanThumbnails}
+                  disabled={floorPlanStartIndex === 0}
+                  aria-label="Previous floor plans"
                 >
-                  <img
-                    src={url}
-                    alt={`Floor plan ${index + 1}`}
-                    className="floor-plan-thumbnail"
-                  />
+                  &#10094;
+                </button>
+              )}
+              <div className="floor-plan-thumbnails-container">
+                <div
+                  className="floor-plan-thumbnails"
+                  style={{ transform: `translateX(-${floorPlanStartIndex * (246 + 10)}px)` }}
+                >
+                  {item.floorPlanUrls.map((url, index) => (
+                    <div
+                      key={index}
+                      className="floor-plan-thumbnail-container"
+                      onClick={() => openFloorPlan(index)}
+                      role="button"
+                      tabIndex={0}
+                      onKeyPress={(e) => e.key === 'Enter' && openFloorPlan(index)}
+                    >
+                      <img
+                        src={url}
+                        alt={`Floor plan ${index + 1}`}
+                        className="floor-plan-thumbnail"
+                      />
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+              {item.floorPlanUrls.length > 3 && (
+                <button
+                  className="carousel-arrow next"
+                  onClick={handleNextFloorPlanThumbnails}
+                  disabled={floorPlanStartIndex >= item.floorPlanUrls.length - 3}
+                  aria-label="Next floor plans"
+                >
+                  &#10095;
+                </button>
+              )}
             </div>
           </div>
         )}
@@ -244,16 +318,50 @@ const DetailsPage = () => {
             {item.detailImages && item.detailImages.length > 0 && (
               <>
                 <h2>Gallery</h2>
-                <div className="details-images">
-                  {item.detailImages.map((img, index) => (
-                    <img
-                      key={index}
-                      src={img}
-                      alt={`${item.name} - view ${index + 1}`}
-                      className="gallery-image"
-                      onClick={() => openImage(index)}
-                    />
-                  ))}
+                <div className="gallery-carousel">
+                  {item.detailImages.length > 3 && (
+                    <button
+                      className="carousel-arrow prev"
+                      onClick={handlePrevGalleryThumbnails}
+                      disabled={galleryStartIndex === 0}
+                      aria-label="Previous images"
+                    >
+                      &#10094;
+                    </button>
+                  )}
+                  <div className="gallery-thumbnails-container">
+                    <div
+                      className="details-images"
+                      style={{ transform: `translateX(-${galleryStartIndex * (250 + 10)}px)` }}
+                    >
+                      {item.detailImages.map((img, index) => (
+                        <div
+                          key={index}
+                          className="gallery-image-container"
+                          onClick={() => openImage(index)}
+                          role="button"
+                          tabIndex={0}
+                          onKeyPress={(e) => e.key === 'Enter' && openImage(index)}
+                        >
+                          <img
+                            src={img}
+                            alt={`${item.name} - view ${index + 1}`}
+                            className="gallery-image"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {item.detailImages.length > 3 && (
+                    <button
+                      className="carousel-arrow next"
+                      onClick={handleNextGalleryThumbnails}
+                      disabled={galleryStartIndex >= item.detailImages.length - 3}
+                      aria-label="Next images"
+                    >
+                      &#10095;
+                    </button>
+                  )}
                 </div>
               </>
             )}

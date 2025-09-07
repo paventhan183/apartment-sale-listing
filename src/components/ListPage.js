@@ -1,22 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import searchConfig from '../data/items-data.json';
 import { getAllListings } from '../data/listings';
 import './ListPage.css';
 
 const ListPage = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState(
+    () => sessionStorage.getItem('searchTerm') || ''
+  );
   const [allItems] = useState(getAllListings());
   const [filteredItems, setFilteredItems] = useState([]);
   const [visibleCount, setVisibleCount] = useState(8);
 
-  // Set initial search term from JSON file
-  useEffect(() => {
-    setSearchTerm(searchConfig.initialSearchValue);
-  }, []);
-
   // Filter items whenever searchTerm or allItems changes
   useEffect(() => {
+    sessionStorage.setItem('searchTerm', searchTerm);
     if (!searchTerm) {
       setFilteredItems(allItems);
       return;
@@ -34,22 +31,38 @@ const ListPage = () => {
 
   // Handles lazy loading on scroll
   useEffect(() => {
+    let throttleTimeout = null;
     const handleScroll = () => {
-      const isAtBottom =
-        window.innerHeight + document.documentElement.scrollTop >=
-        document.documentElement.offsetHeight - 100; // 100px buffer
-
-      if (isAtBottom && visibleCount < filteredItems.length) {
-        setVisibleCount(prevCount => prevCount + 8);
+      if (throttleTimeout) {
+        return;
       }
+      throttleTimeout = setTimeout(() => {
+        throttleTimeout = null;
+        const isAtBottom =
+          window.innerHeight + document.documentElement.scrollTop >=
+          document.documentElement.offsetHeight - 100; // 100px buffer
+
+        if (isAtBottom && visibleCount < filteredItems.length) {
+          setVisibleCount(prevCount => prevCount + 8);
+        }
+      }, 200);
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      if (throttleTimeout) {
+        clearTimeout(throttleTimeout);
+      }
+    };
   }, [visibleCount, filteredItems]);
 
   const handleSearchChange = (event) => {
     setSearchTerm(event.target.value);
+  };
+
+  const handleReset = () => {
+    setSearchTerm('');
   };
 
   const formatToLakhs = (amount) => {
@@ -69,6 +82,9 @@ const ListPage = () => {
           onChange={handleSearchChange}
           aria-label="Search for listings"
         />
+        {searchTerm && (
+          <button onClick={handleReset} className="reset-button">Reset</button>
+        )}
       </div>
       <div className="results-grid">
         {filteredItems.length > 0 ? (
