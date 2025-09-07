@@ -6,14 +6,20 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<ListPage />} />
+    // <Router>
+    //   <div className="App">
+    //     <Routes>
+    //       <Route path="/" element={<ListPage />} />
+    //       <Route path="/details/:itemId" element={<DetailsPage />} />
+    //     </Routes>
+    //   </div>
+    // </Router>
+    <HashRouter>
+      <Routes>
+       <Route path="/" element={<ListPage />} />
           <Route path="/details/:itemId" element={<DetailsPage />} />
-        </Routes>
-      </div>
-    </Router>
+      </Routes>
+    </HashRouter>
   );
 }
 
