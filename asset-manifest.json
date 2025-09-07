@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/apartment-sale-listing/static/css/main.911d2968.css",
-    "main.js": "/apartment-sale-listing/static/js/main.6229fe3d.js",
+    "main.css": "/apartment-sale-listing/static/css/main.28280976.css",
+    "main.js": "/apartment-sale-listing/static/js/main.4cd8c4b9.js",
     "static/js/453.096754f8.chunk.js": "/apartment-sale-listing/static/js/453.096754f8.chunk.js",
     "index.html": "/apartment-sale-listing/index.html",
-    "main.911d2968.css.map": "/apartment-sale-listing/static/css/main.911d2968.css.map",
-    "main.6229fe3d.js.map": "/apartment-sale-listing/static/js/main.6229fe3d.js.map",
+    "main.28280976.css.map": "/apartment-sale-listing/static/css/main.28280976.css.map",
+    "main.4cd8c4b9.js.map": "/apartment-sale-listing/static/js/main.4cd8c4b9.js.map",
     "453.096754f8.chunk.js.map": "/apartment-sale-listing/static/js/453.096754f8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.911d2968.css",
-    "static/js/main.6229fe3d.js"
+    "static/css/main.28280976.css",
+    "static/js/main.4cd8c4b9.js"
   ]
 }
