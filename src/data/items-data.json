@@ -14,6 +14,11 @@
     "address": "plot no 26/30, patchai street, mugalivakkam, Chennai, Tamil Nadu, 600125",
     "lat": 13.017694,
     "lng": 80.162056,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan+1",
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan+2"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0101"
   },
   {
@@ -31,6 +36,10 @@
     "address": "456 Race Course Road, Saibaba Colony, Coimbatore, Tamil Nadu, 641011",
     "lat": 11.0155,
     "lng": 76.9521,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0102"
   },
   {
@@ -48,6 +57,10 @@
     "address": "789 West Masi Street, Simmakkal, Madurai, Tamil Nadu, 625001",
     "lat": 9.9200,
     "lng": 78.1130,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0103"
   },
   {
@@ -65,6 +78,10 @@
     "address": "101 Rockfort Main Road, Srirangam, Tiruchirappalli, Tamil Nadu, 620006",
     "lat": 10.8575,
     "lng": 78.6895,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0104"
   },
   {
@@ -82,6 +99,10 @@
     "address": "202 Omalur Main Road, Fairlands, Salem, Tamil Nadu, 636016",
     "lat": 11.6643,
     "lng": 78.1460,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0105"
   },
   {
@@ -99,6 +120,10 @@
     "address": "321 Cauvery Road, Karungalpalayam, Erode, Tamil Nadu, 638003",
     "lat": 11.3360,
     "lng": 77.7231,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0106"
   },
   {
@@ -116,6 +141,10 @@
     "address": "789 Big Temple Road, East Gate, Thanjavur, Tamil Nadu, 613001",
     "lat": 10.7833,
     "lng": 79.1333,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0107"
   },
   {
@@ -133,6 +162,10 @@
     "address": "12 Doddabetta Road, Charring Cross, Ooty, Tamil Nadu, 643001",
     "lat": 11.4100,
     "lng": 76.7100,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0108"
   },
   {
@@ -150,6 +183,10 @@
     "address": "456 Beach Road, Vivekananda Puram, Kanyakumari, Tamil Nadu, 629702",
     "lat": 8.0883,
     "lng": 77.5385,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0109"
   },
   {
@@ -167,6 +204,10 @@
     "address": "78 Mission Street, White Town, Puducherry, 605001",
     "lat": 11.9338,
     "lng": 79.8323,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0110"
   },
   {
@@ -184,6 +225,10 @@
     "address": "15 Fort Round Road, Balaji Nagar, Vellore, Tamil Nadu, 632004",
     "lat": 12.9205,
     "lng": 79.1331,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0111"
   },
   {
@@ -201,6 +246,10 @@
     "address": "555 Mount Road, Guindy, Chennai, Tamil Nadu, 600032",
     "lat": 13.0102,
     "lng": 80.2156,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0112"
   },
   {
@@ -218,6 +267,10 @@
     "address": "200 Cantonment Park Road, Cantonment, Tiruchirappalli, Tamil Nadu, 620001",
     "lat": 10.8069,
     "lng": 78.6896,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0113"
   },
   {
@@ -235,6 +288,10 @@
     "address": "303 Yercaud Main Road, Gorimedu, Salem, Tamil Nadu, 636008",
     "lat": 11.6954,
     "lng": 78.1653,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0114"
   },
   {
@@ -252,6 +309,10 @@
     "address": "1 Rajiv Gandhi Salai, Taramani, Tidel Park, Chennai, Tamil Nadu, 600113",
     "lat": 12.9895,
     "lng": 80.2467,
+    "floorPlanUrls": [
+      "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
+    ],
+    "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
     "phoneNumber": "555-0115"
   }
 ]

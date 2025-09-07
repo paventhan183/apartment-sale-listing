@@ -8,6 +8,7 @@ const DetailsPage = () => {
   const item = getListingById(itemId);
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   const [isVideoModalOpen, setVideoModalOpen] = useState(false);
+  const [selectedFloorPlanIndex, setSelectedFloorPlanIndex] = useState(null);
   const [isDescriptionExpanded, setIsDescriptionExpanded] = useState(false);
 
   const openImage = (index) => {
@@ -26,6 +27,14 @@ const DetailsPage = () => {
     setVideoModalOpen(false);
   }, []);
 
+  const openFloorPlan = (index) => {
+    setSelectedFloorPlanIndex(index);
+  };
+
+  const closeFloorPlan = useCallback(() => {
+    setSelectedFloorPlanIndex(null);
+  }, []);
+
   const showNextImage = useCallback((e) => {
     e.stopPropagation();
     if (selectedImageIndex === null || !item.detailImages) return;
@@ -38,16 +47,35 @@ const DetailsPage = () => {
     setSelectedImageIndex((prevIndex) => (prevIndex - 1 + item.detailImages.length) % item.detailImages.length);
   }, [selectedImageIndex, item.detailImages]);
 
+  const showNextFloorPlan = useCallback((e) => {
+    e.stopPropagation();
+    if (selectedFloorPlanIndex === null || !item.floorPlanUrls) return;
+    setSelectedFloorPlanIndex((prevIndex) => (prevIndex + 1) % item.floorPlanUrls.length);
+  }, [selectedFloorPlanIndex, item.floorPlanUrls]);
+
+  const showPrevFloorPlan = useCallback((e) => {
+    e.stopPropagation();
+    if (selectedFloorPlanIndex === null || !item.floorPlanUrls) return;
+    setSelectedFloorPlanIndex((prevIndex) => (prevIndex - 1 + item.floorPlanUrls.length) % item.floorPlanUrls.length);
+  }, [selectedFloorPlanIndex, item.floorPlanUrls]);
+
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'Escape') {
         closeImage();
         closeVideoModal();
+        closeFloorPlan();
       } else if (selectedImageIndex !== null) {
         if (event.key === 'ArrowRight') {
           showNextImage(event);
         } else if (event.key === 'ArrowLeft') {
           showPrevImage(event);
+        }
+      } else if (selectedFloorPlanIndex !== null) {
+        if (event.key === 'ArrowRight') {
+          showNextFloorPlan(event);
+        } else if (event.key === 'ArrowLeft') {
+          showPrevFloorPlan(event);
         }
       }
     };
@@ -55,7 +83,7 @@ const DetailsPage = () => {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [closeImage, closeVideoModal, selectedImageIndex, showNextImage, showPrevImage]);
+  }, [closeImage, closeVideoModal, closeFloorPlan, selectedImageIndex, showNextImage, showPrevImage, selectedFloorPlanIndex, showNextFloorPlan, showPrevFloorPlan]);
 
   if (!item) {
     return (
@@ -96,6 +124,22 @@ const DetailsPage = () => {
           </button>
         </div>
       )}
+      {selectedFloorPlanIndex !== null && (
+        <div className="modal-overlay" onClick={closeFloorPlan} role="dialog" aria-modal="true">
+          <button className="modal-arrow-button prev" onClick={showPrevFloorPlan} aria-label="Previous floor plan">
+            &#10094;
+          </button>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close-button" onClick={closeFloorPlan} aria-label="Close floor plan viewer">
+              &times;
+            </button>
+            <img src={item.floorPlanUrls[selectedFloorPlanIndex]} alt={`Floor plan ${selectedFloorPlanIndex + 1}`} className="modal-image" />
+          </div>
+          <button className="modal-arrow-button next" onClick={showNextFloorPlan} aria-label="Next floor plan">
+            &#10095;
+          </button>
+        </div>
+      )}
       {isVideoModalOpen && (
         <div className="modal-overlay" onClick={closeVideoModal} role="dialog" aria-modal="true">
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -126,6 +170,45 @@ const DetailsPage = () => {
           <p><strong>Address:</strong> {item.address}</p>
           <p><strong>Phone:</strong> {item.phoneNumber}</p>
         </div>
+
+        {item.floorPlanUrls && item.floorPlanUrls.length > 0 && (
+          <div className="details-floor-plan">
+            <h3>Floor Plan(s)</h3>
+            <div className="floor-plan-thumbnails">
+              {item.floorPlanUrls.map((url, index) => (
+                <div
+                  key={index}
+                  className="floor-plan-thumbnail-container"
+                  onClick={() => openFloorPlan(index)}
+                  role="button"
+                  tabIndex={0}
+                  onKeyPress={(e) => e.key === 'Enter' && openFloorPlan(index)}
+                >
+                  <img
+                    src={url}
+                    alt={`Floor plan ${index + 1}`}
+                    className="floor-plan-thumbnail"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {item.brochureUrl && (
+          <div className="details-brochure">
+            <h3>Apartment Brochure</h3>
+            <a
+              href={item.brochureUrl}
+              download
+              className="brochure-download-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Brochure (PDF)
+            </a>
+          </div>
+        )}
         
         <div className="details-map">
           <h3>On the Map</h3>
