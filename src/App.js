@@ -6,20 +6,17 @@ import './App.css';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 function App() {
   return (
-    // <Router>
-    //   <div className="App">
-    //     <Routes>
-    //       <Route path="/" element={<ListPage />} />
-    //       <Route path="/details/:itemId" element={<DetailsPage />} />
-    //     </Routes>
-    //   </div>
-    // </Router>
-    <HashRouter>
-      <Routes>
-       <Route path="/" element={<ListPage />} />
+    <div className="App">
+      <div className="advertisement-contact">
+        For Advertisement Contact: 90000000
+      </div>
+      <HashRouter>
+        <Routes>
+         <Route path="/" element={<ListPage />} />
           <Route path="/details/:itemId" element={<DetailsPage />} />
-      </Routes>
-    </HashRouter>
+        </Routes>
+      </HashRouter>
+    </div>
   );
 }
 

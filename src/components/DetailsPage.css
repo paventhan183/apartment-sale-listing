@@ -25,6 +25,14 @@
   line-height: 1.6;
 }
 
+.item-amount-details {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .show-more-less-button {
   background: none;
   border: none;

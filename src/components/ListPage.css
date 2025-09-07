@@ -64,3 +64,10 @@
   color: #666;
   margin: 0;
 }
+
+.item-amount {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}

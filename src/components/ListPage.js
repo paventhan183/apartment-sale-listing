@@ -52,6 +52,11 @@ const ListPage = () => {
     setSearchTerm(event.target.value);
   };
 
+  const formatToLakhs = (amount) => {
+    const lakhs = amount / 100000;
+    return `${parseFloat(lakhs.toFixed(2))}L`;
+  };
+
   return (
     <div className="search-page">
       <h1>Apartment Sale Listings</h1>
@@ -74,6 +79,9 @@ const ListPage = () => {
                 <div className="grid-item-content">
                   <h2>{item.name}</h2>
                   <p className="item-place">{item.placeName}</p>
+                  {item.minAmount && item.maxAmount && (
+                    <p className="item-amount">{formatToLakhs(item.minAmount)} - {formatToLakhs(item.maxAmount)}</p>
+                  )}
                 </div>
               </div>
             </Link>

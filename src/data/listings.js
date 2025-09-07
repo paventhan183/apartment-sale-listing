@@ -9,7 +9,7 @@ export const getAllListings = () => {
   // Simulate receiving a JSON string (like from an API) and parsing it.
   const jsonString = JSON.stringify(itemsData);
   const listings = JSON.parse(jsonString);
-  return listings;
+  return listings.filter(item => item.show !== false);
 };
 
 /**

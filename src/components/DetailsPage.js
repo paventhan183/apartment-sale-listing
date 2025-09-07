@@ -106,6 +106,11 @@ const DetailsPage = () => {
     ? `${item.description.substring(0, DESCRIPTION_CHAR_LIMIT)}...`
     : item.description;
 
+  const formatToLakhs = (amount) => {
+    const lakhs = amount / 100000;
+    return `${parseFloat(lakhs.toFixed(2))}L`;
+  };
+
   return (
     <div className="details-page">
       {selectedImageIndex !== null && (
@@ -156,20 +161,29 @@ const DetailsPage = () => {
       <Link to="/" className="back-link">‹ Back to Listings</Link>
       <div className="details-content">
         <h1>{item.name}</h1>
-        <p className="item-description">
-          {descriptionText}
-          {isLongDescription && (
-            <button onClick={toggleDescription} className="show-more-less-button">
-              {isDescriptionExpanded ? ' Show less' : ' Show more'}
-            </button>
-          )}
-        </p>
+        {item.minAmount && item.maxAmount && (
+          <p className="item-amount-details">
+            Price: {formatToLakhs(item.minAmount)} - {formatToLakhs(item.maxAmount)}
+          </p>
+        )}
+        {item.description && (
+          <p className="item-description">
+            {descriptionText}
+            {isLongDescription && (
+              <button onClick={toggleDescription} className="show-more-less-button">
+                {isDescriptionExpanded ? ' Show less' : ' Show more'}
+              </button>
+            )}
+          </p>
+        )}
         
-        <div className="contact-info">
-          <h3>Contact & Location</h3>
-          <p><strong>Address:</strong> {item.address}</p>
-          <p><strong>Phone:</strong> {item.phoneNumber}</p>
-        </div>
+        {(item.address || item.phoneNumber) && (
+          <div className="contact-info">
+            <h3>Contact & Location</h3>
+            {item.address && <p><strong>Address:</strong> {item.address}</p>}
+            {item.phoneNumber && <p><strong>Phone:</strong> {item.phoneNumber}</p>}
+          </div>
+        )}
 
         {item.floorPlanUrls && item.floorPlanUrls.length > 0 && (
           <div className="details-floor-plan">
@@ -210,45 +224,53 @@ const DetailsPage = () => {
           </div>
         )}
         
-        <div className="details-map">
-          <h3>On the Map</h3>
-          <iframe
-            title="Listing Location"
-            width="100%"
-            height="450"
-            style={{ border: 0 }}
-            loading="lazy"
-            allowFullScreen
-            src={`https://maps.google.com/maps?q=${item.lat},${item.lng}&t=&z=15&ie=UTF8&iwloc=A&output=embed`}
-          ></iframe>
-        </div>
-
-        <div className="details-media">
-          <h2>Gallery</h2>
-          <div className="details-images">
-            {item.detailImages && item.detailImages.map((img, index) => (
-              <img
-                key={index}
-                src={img}
-                alt={`${item.name} - view ${index + 1}`}
-                className="gallery-image"
-                onClick={() => openImage(index)}
-              />
-            ))}
+        {item.lat && item.lng && (
+          <div className="details-map">
+            <h3>On the Map</h3>
+            <iframe
+              title="Listing Location"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              src={`https://maps.google.com/maps?q=${item.lat},${item.lng}&t=&z=15&ie=UTF8&iwloc=A&output=embed`}
+            ></iframe>
           </div>
+        )}
 
-          {item.videoUrl && (
-            <div className="details-video">
-              <h2>Video Tour</h2>
-              <div className="video-thumbnail-container" onClick={openVideoModal} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && openVideoModal()}>
-                <video width="100%">
-                  <source src={item.videoUrl} type="video/mp4" />
-                </video>
-                <div className="play-button-overlay" />
+        {(item.detailImages && item.detailImages.length > 0 || item.videoUrl) && (
+          <div className="details-media">
+            {item.detailImages && item.detailImages.length > 0 && (
+              <>
+                <h2>Gallery</h2>
+                <div className="details-images">
+                  {item.detailImages.map((img, index) => (
+                    <img
+                      key={index}
+                      src={img}
+                      alt={`${item.name} - view ${index + 1}`}
+                      className="gallery-image"
+                      onClick={() => openImage(index)}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+
+            {item.videoUrl && (
+              <div className="details-video">
+                <h2>Video Tour</h2>
+                <div className="video-thumbnail-container" onClick={openVideoModal} role="button" tabIndex={0} onKeyPress={(e) => e.key === 'Enter' && openVideoModal()}>
+                  <video width="100%">
+                    <source src={item.videoUrl} type="video/mp4" />
+                  </video>
+                  <div className="play-button-overlay" />
+                </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

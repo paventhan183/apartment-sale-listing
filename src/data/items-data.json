@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Harish flats Apartment",
-    "placeName": "Chennai",
+    "placeName": "T. Nagar, Chennai",
     "description": "A beautiful and sunny apartment in the heart of the city, featuring 2 bedrooms and a modern kitchen. This stunning space offers floor-to-ceiling windows that flood the living area with natural light, providing a warm and inviting atmosphere all year round. The open-concept layout is perfect for entertaining guests.",
     "imageUrl": "https://placehold.co/600x400/F8C471/FFFFFF/png?text=Sunny+Apartment",
     "detailImages": [
@@ -11,20 +11,23 @@
       "https://placehold.co/800x600/FDEBD0/FFFFFF/png?text=Bedroom"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "plot no 26/30, patchai street, mugalivakkam, Chennai, Tamil Nadu, 600125",
-    "lat": 13.017694,
-    "lng": 80.162056,
+    "address": "15, Usman Road, T. Nagar, Chennai, Tamil Nadu, 600017",
+    "lat": 13.0403,
+    "lng": 80.2337,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan+1",
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan+2"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0101"
+    "phoneNumber": "555-0101",
+    "show": true,
+    "minAmount": 5000000,
+    "maxAmount": 7500000
   },
   {
     "id": 2,
     "name": "Cozy Suburban Loft",
-    "placeName": "Coimbatore",
+    "placeName": "Adyar, Chennai",
     "description": "Perfect for a small family, located in a quiet suburb with great schools and parks nearby. The property boasts a large, fenced-in backyard, ideal for children and pets to play safely. Inside, you'll find a newly renovated kitchen with stainless steel appliances and granite countertops.",
     "imageUrl": "https://placehold.co/600x400/A9CCE3/FFFFFF/png?text=Cozy+Loft",
     "detailImages": [
@@ -33,19 +36,22 @@
       "https://placehold.co/800x600/D6EAF8/FFFFFF/png?text=Garden"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "456 Race Course Road, Saibaba Colony, Coimbatore, Tamil Nadu, 641011",
-    "lat": 11.0155,
-    "lng": 76.9521,
+    "address": "22, Gandhi Nagar, 1st Main Road, Adyar, Chennai, Tamil Nadu, 600020",
+    "lat": 13.0063,
+    "lng": 80.2572,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0102"
+    "phoneNumber": "555-0102",
+    "show": true,
+    "minAmount": 8000000,
+    "maxAmount": 9500000
   },
   {
     "id": 3,
     "name": "Modern City Center Flat",
-    "placeName": "Madurai",
+    "placeName": "Anna Nagar, Chennai",
     "description": "A modern flat with all amenities, just steps away from public transport and shopping centers. This unit includes access to a state-of-the-art gym, a rooftop pool, and a 24-hour concierge service, offering the ultimate in convenience and urban living.",
     "imageUrl": "https://placehold.co/600x400/ABB2B9/FFFFFF/png?text=Modern+Flat",
     "detailImages": [
@@ -54,19 +60,22 @@
       "https://placehold.co/800x600/E5E8E8/FFFFFF/png?text=Lobby"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "789 West Masi Street, Simmakkal, Madurai, Tamil Nadu, 625001",
-    "lat": 9.9200,
-    "lng": 78.1130,
+    "address": "10, 2nd Avenue, Anna Nagar, Chennai, Tamil Nadu, 600040",
+    "lat": 13.0853,
+    "lng": 80.2101,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0103"
+    "phoneNumber": "555-0103",
+    "show": true,
+    "minAmount": 10000000,
+    "maxAmount": 12000000
   },
   {
     "id": 4,
     "name": "Spacious Garden Apartment",
-    "placeName": "Tiruchirappalli",
+    "placeName": "Velachery, Chennai",
     "description": "An apartment with a large private garden, perfect for pets and outdoor entertaining.",
     "imageUrl": "https://placehold.co/600x400/A3E4D7/FFFFFF/png?text=Garden+Apt",
     "detailImages": [
@@ -75,19 +84,22 @@
       "https://placehold.co/800x600/D0ECE7/FFFFFF/png?text=Living+Area"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "101 Rockfort Main Road, Srirangam, Tiruchirappalli, Tamil Nadu, 620006",
-    "lat": 10.8575,
-    "lng": 78.6895,
+    "address": "5, 100 Feet Bypass Road, Velachery, Chennai, Tamil Nadu, 600042",
+    "lat": 12.9785,
+    "lng": 80.2195,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0104"
+    "phoneNumber": "555-0104",
+    "show": true,
+    "minAmount": 6000000,
+    "maxAmount": 8000000
   },
   {
     "id": 5,
     "name": "Luxury Penthouse Suite",
-    "placeName": "Salem",
+    "placeName": "Mylapore, Chennai",
     "description": "Experience luxury living with panoramic city views, a private rooftop terrace, and premium finishes. This exclusive penthouse includes a private elevator, a home theater system, and a wine cellar. The expansive terrace is an entertainer's dream, complete with an outdoor kitchen and fire pit.",
     "imageUrl": "https://placehold.co/600x400/D7BDE2/FFFFFF/png?text=Penthouse",
     "detailImages": [
@@ -96,19 +108,22 @@
       "https://placehold.co/800x600/E8DAEF/FFFFFF/png?text=City+View"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "202 Omalur Main Road, Fairlands, Salem, Tamil Nadu, 636016",
-    "lat": 11.6643,
-    "lng": 78.1460,
+    "address": "8, North Mada Street, Mylapore, Chennai, Tamil Nadu, 600004",
+    "lat": 13.0339,
+    "lng": 80.2699,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0105"
+    "phoneNumber": "555-0105",
+    "show": true,
+    "minAmount": 20000000,
+    "maxAmount": 25000000
   },
   {
     "id": 6,
     "name": "Riverside View Apartment",
-    "placeName": "Erode",
+    "placeName": "Guindy, Chennai",
     "description": "Stunning apartment with a view of the river. Includes a balcony and modern appliances. Enjoy your morning coffee while watching the boats go by from your private balcony. The building also features a private dock for residents, making it a boater's paradise.",
     "imageUrl": "https://placehold.co/600x400/85C1E9/FFFFFF/png?text=Riverside+View",
     "detailImages": [
@@ -117,19 +132,22 @@
       "https://placehold.co/800x600/D6EAF8/FFFFFF/png?text=Bedroom"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "321 Cauvery Road, Karungalpalayam, Erode, Tamil Nadu, 638003",
-    "lat": 11.3360,
-    "lng": 77.7231,
+    "address": "12, Race Course Road, Guindy, Chennai, Tamil Nadu, 600032",
+    "lat": 13.0102,
+    "lng": 80.2156,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0106"
+    "phoneNumber": "555-0106",
+    "show": true,
+    "minAmount": 9000000,
+    "maxAmount": 11000000
   },
   {
     "id": 7,
     "name": "Historic District Flat",
-    "placeName": "Thanjavur",
+    "placeName": "Nungambakkam, Chennai",
     "description": "Charming flat in the historic district, with original hardwood floors and high ceilings. This beautifully preserved unit combines historic character with modern updates. It's located on a picturesque cobblestone street, just a short walk from the city's best cafes, boutiques, and museums.",
     "imageUrl": "https://placehold.co/600x400/D5DBDB/FFFFFF/png?text=Historic+Flat",
     "detailImages": [
@@ -138,19 +156,22 @@
       "https://placehold.co/800x600/F4F6F7/FFFFFF/png?text=Details"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "789 Big Temple Road, East Gate, Thanjavur, Tamil Nadu, 613001",
-    "lat": 10.7833,
-    "lng": 79.1333,
+    "address": "30, Khader Nawaz Khan Road, Nungambakkam, Chennai, Tamil Nadu, 600006",
+    "lat": 13.0598,
+    "lng": 80.2449,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0107"
+    "phoneNumber": "555-0107",
+    "show": true,
+    "minAmount": 15000000,
+    "maxAmount": 18000000
   },
   {
     "id": 8,
     "name": "Mountain Retreat Condo",
-    "placeName": "Ooty",
+    "placeName": "Alwarpet, Chennai",
     "description": "A cozy condo perfect for a mountain getaway. Close to hiking trails and ski resorts.",
     "imageUrl": "https://placehold.co/600x400/A9DFBF/FFFFFF/png?text=Mountain+Condo",
     "detailImages": [
@@ -159,19 +180,22 @@
       "https://placehold.co/800x600/D4EFDF/FFFFFF/png?text=Deck"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "12 Doddabetta Road, Charring Cross, Ooty, Tamil Nadu, 643001",
-    "lat": 11.4100,
-    "lng": 76.7100,
+    "address": "4, TTK Road, Alwarpet, Chennai, Tamil Nadu, 600018",
+    "lat": 13.0324,
+    "lng": 80.252,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0108"
+    "phoneNumber": "555-0108",
+    "show": true,
+    "minAmount": 7000000,
+    "maxAmount": 8500000
   },
   {
     "id": 9,
     "name": "Beachside Bungalow Apartment",
-    "placeName": "Kanyakumari",
+    "placeName": "Besant Nagar, Chennai",
     "description": "Walk to the beach from this beautiful bungalow-style apartment.",
     "imageUrl": "https://placehold.co/600x400/F9E79F/FFFFFF/png?text=Beachside+Apt",
     "detailImages": [
@@ -180,19 +204,22 @@
       "https://placehold.co/800x600/FDEDEC/FFFFFF/png?text=Interior"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "456 Beach Road, Vivekananda Puram, Kanyakumari, Tamil Nadu, 629702",
-    "lat": 8.0883,
-    "lng": 77.5385,
+    "address": "7, Elliot's Beach Road, Besant Nagar, Chennai, Tamil Nadu, 600090",
+    "lat": 13.0015,
+    "lng": 80.2655,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0109"
+    "phoneNumber": "555-0109",
+    "show": true,
+    "minAmount": 12000000,
+    "maxAmount": 15000000
   },
   {
     "id": 10,
     "name": "Artist's Loft Apartment",
-    "placeName": "Puducherry",
+    "placeName": "Thiruvanmiyur, Chennai",
     "description": "Spacious loft with high ceilings and great natural light, located in the vibrant Arts District. This open-plan living space is perfect for a creative individual, featuring exposed brick walls, polished concrete floors, and large industrial windows. It's a true artist's dream home.",
     "imageUrl": "https://placehold.co/600x400/C39BD3/FFFFFF/png?text=Artist+Loft",
     "detailImages": [
@@ -201,19 +228,22 @@
       "https://placehold.co/800x600/E8DAEF/FFFFFF/png?text=Exposed+Brick"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "78 Mission Street, White Town, Puducherry, 605001",
-    "lat": 11.9338,
-    "lng": 79.8323,
+    "address": "18, East Coast Road, Thiruvanmiyur, Chennai, Tamil Nadu, 600041",
+    "lat": 12.9839,
+    "lng": 80.2612,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0110"
+    "phoneNumber": "555-0110",
+    "show": true,
+    "minAmount": 9500000,
+    "maxAmount": 12500000
   },
   {
     "id": 11,
     "name": "Quiet Cul-de-sac Apartment",
-    "placeName": "Vellore",
+    "placeName": "Sholinganallur, Chennai",
     "description": "A peaceful apartment at the end of a quiet cul-de-sac, perfect for relaxation.",
     "imageUrl": "https://placehold.co/600x400/B2BABB/FFFFFF/png?text=Quiet+Apt",
     "detailImages": [
@@ -222,19 +252,22 @@
       "https://placehold.co/800x600/D3D3D3/FFFFFF/png?text=Kitchen"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "15 Fort Round Road, Balaji Nagar, Vellore, Tamil Nadu, 632004",
-    "lat": 12.9205,
-    "lng": 79.1331,
+    "address": "25, OMR, Sholinganallur, Chennai, Tamil Nadu, 600119",
+    "lat": 12.8936,
+    "lng": 80.2276,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0111"
+    "phoneNumber": "555-0111",
+    "show": true,
+    "minAmount": 5500000,
+    "maxAmount": 7000000
   },
   {
     "id": 12,
     "name": "Downtown Studio Apartment",
-    "placeName": "Chennai",
+    "placeName": "Perungudi, Chennai",
     "description": "Efficient and modern studio apartment in a prime downtown location.",
     "imageUrl": "https://placehold.co/600x400/F5B7B1/FFFFFF/png?text=Studio+Apt",
     "detailImages": [
@@ -243,19 +276,22 @@
       "https://placehold.co/800x600/FDEDEC/FFFFFF/png?text=Bathroom"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "555 Mount Road, Guindy, Chennai, Tamil Nadu, 600032",
-    "lat": 13.0102,
-    "lng": 80.2156,
+    "address": "50, Rajiv Gandhi Salai, Perungudi, Chennai, Tamil Nadu, 600096",
+    "lat": 12.9569,
+    "lng": 80.2443,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0112"
+    "phoneNumber": "555-0112",
+    "show": true,
+    "minAmount": 4500000,
+    "maxAmount": 6000000
   },
   {
     "id": 13,
     "name": "Family-Friendly Apartment Complex",
-    "placeName": "Tiruchirappalli",
+    "placeName": "Madipakkam, Chennai",
     "description": "A large 3-bedroom apartment in a complex with a pool and playground.",
     "imageUrl": "https://placehold.co/600x400/76D7C4/FFFFFF/png?text=Family+Apt",
     "detailImages": [
@@ -264,19 +300,22 @@
       "https://placehold.co/800x600/D0ECE7/FFFFFF/png?text=Interior"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "200 Cantonment Park Road, Cantonment, Tiruchirappalli, Tamil Nadu, 620001",
-    "lat": 10.8069,
-    "lng": 78.6896,
+    "address": "3, Ram Nagar South, Madipakkam, Chennai, Tamil Nadu, 600091",
+    "lat": 12.9625,
+    "lng": 80.195,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0113"
+    "phoneNumber": "555-0113",
+    "show": true,
+    "minAmount": 8500000,
+    "maxAmount": 10000000
   },
   {
     "id": 14,
     "name": "Penthouse with Rooftop Garden",
-    "placeName": "Salem",
+    "placeName": "Chromepet, Chennai",
     "description": "A unique penthouse apartment that features a private rooftop garden.",
     "imageUrl": "https://placehold.co/600x400/F7DC6F/FFFFFF/png?text=Rooftop+Garden",
     "detailImages": [
@@ -285,14 +324,17 @@
       "https://placehold.co/800x600/FCF3CF/FFFFFF/png?text=Living+Room"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "303 Yercaud Main Road, Gorimedu, Salem, Tamil Nadu, 636008",
-    "lat": 11.6954,
-    "lng": 78.1653,
+    "address": "9, Grand Southern Trunk Road, Chromepet, Chennai, Tamil Nadu, 600044",
+    "lat": 12.9534,
+    "lng": 80.1419,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0114"
+    "phoneNumber": "555-0114",
+    "show": true,
+    "minAmount": 11000000,
+    "maxAmount": 14000000
   },
   {
     "id": 15,
@@ -306,13 +348,16 @@
       "https://placehold.co/800x600/E5E7E9/FFFFFF/png?text=Compact+Kitchen"
     ],
     "videoUrl": "https://www.w3schools.com/html/mov_bbb.mp4",
-    "address": "1 Rajiv Gandhi Salai, Taramani, Tidel Park, Chennai, Tamil Nadu, 600113",
+    "address": "1, Tidel Park, Rajiv Gandhi Salai, Taramani, Chennai, Tamil Nadu, 600113",
     "lat": 12.9895,
     "lng": 80.2467,
     "floorPlanUrls": [
       "https://placehold.co/800x600/E5E7E9/333333/png?text=Floor+Plan"
     ],
     "brochureUrl": "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf",
-    "phoneNumber": "555-0115"
+    "phoneNumber": "555-0115",
+    "show": true,
+    "minAmount": 4000000,
+    "maxAmount": 5500000
   }
 ]
