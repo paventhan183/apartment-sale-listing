@@ -1,7 +1,10 @@
 pipeline {
     agent any
 
-   
+       environment {
+        REPO_URL = "https://github.com/paventhan183/apartment-sale-listing.git"
+        BRANCH = "master"
+    }
     stages {
         stage('Checkout Code') {
             steps {
