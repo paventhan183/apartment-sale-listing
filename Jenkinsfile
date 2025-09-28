@@ -1,10 +1,10 @@
 pipeline {
     agent any
 
-       environment {
-        REPO_URL = "https://github.com/paventhan183/apartment-sale-listing.git"
-        BRANCH = "master"
+    tools {
+        nodejs "NodeJS"
     }
+
     stages {
         stage('Checkout Code') {
             steps {
