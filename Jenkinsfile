@@ -10,7 +10,7 @@ pipeline {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/paventhan183/apartment-sale-listing.git',
-                    credentialsId: 'GITHUB_TOKEN'  // use Jenkins stored credential
+                    credentialsId: 'ca232451-1056-4311-843b-d7d77132c615'  // use Jenkins stored credential
             }
         }
 
@@ -28,7 +28,7 @@ pipeline {
 
         stage('Deploy to GitHub Pages') {
             steps {
-                withCredentials([string(credentialsId: 'GITHUB_TOKEN', variable: 'TOKEN')]) {
+                withCredentials([string(credentialsId: 'ca232451-1056-4311-843b-d7d77132c615', variable: 'TOKEN')]) {
                     sh '''
                     git config user.email "paventhanbtech1990@gmail.com"
                     git config user.name "paventhan"
