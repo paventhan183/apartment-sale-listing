@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div className="advertisement-contact">
-        For Advertisement Contact: 90000000
+        For Advertisement Contact: 1234567890
       </div>
       <HashRouter>
         <Routes>
