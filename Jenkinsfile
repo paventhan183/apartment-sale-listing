@@ -1,9 +1,11 @@
 pipeline {
     agent any
 
-   { 
-    tools { nodejs "NodeJS" }
+   
+    tools {
+        nodejs "NodeJS"  // Name must match exactly
     }
+
     stages {
         stage('Checkout Code') {
             steps {
