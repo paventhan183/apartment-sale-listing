@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/paventhan183/apartment-sale-listing.git',
                     credentialsId: 'ca232451-1056-4311-843b-d7d77132c615'  // use Jenkins stored credential
             }
